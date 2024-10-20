@@ -79,6 +79,60 @@ Once the application is running, you can access the endpoints using the followin
     Team Performance: http://localhost:5000/api/team_performance
     Performance Trends: http://localhost:5000/api/performance_trends/<time_period> (replace <time_period> with "3" for monthly)
 
+
+I'd be glad to provide information on the `.env` file and its usage within the context of the given code:
+
+**Purpose of `.env` Files:**
+
+- `.env` files are used to store sensitive information, such as API keys, passwords, or database credentials.
+- By storing these values in a separate file, you can avoid accidentally committing them to version control (e.g., Git), which could expose them publicly.
+- This helps maintain security and privacy.
+
+**Usage in the Code:**
+
+1. **Create the `.env` File:**
+   - Create a file named `.env` in the same directory as your Python code.
+   - Add the environment variables you want to use, in the format:
+     ```
+     VARIABLE_NAME=VALUE
+     ```
+     For example, if your Groq API key is `my_secret_api_key`, you would add:
+     ```
+     Groq_API_KEY=my_secret_api_key
+     ```
+
+2. **Load Environment Variables:**
+   - Import the `dotenv` library at the beginning of your Python code.
+   - Call the `load_dotenv()` function to load the environment variables from the `.env` file into the `os.environ` dictionary.
+
+   Here's how it's used in the provided code:
+
+   ```python
+   import os
+   from dotenv import load_dotenv
+
+   load_dotenv()
+   groq_api_key = os.environ['Groq_API_KEY']
+   ```
+
+3. **Access Environment Variables:**
+   - Once the environment variables are loaded, you can access them using the `os.environ` dictionary.
+
+   In the code, the Groq API key is accessed using:
+
+   ```python
+   client = Groq(api_key=groq_api_key)
+   ```
+
+**Important Considerations:**
+
+- **Security:** Remember to **never** commit the `.env` file to version control. This would expose your sensitive information.
+- **Environment:** Make sure the `.env` file is in the same directory as your Python code when running it.
+- **Best Practices:** Use meaningful variable names for your environment variables to improve readability.
+
+By following these steps, you can effectively use `.env` files to store sensitive information in your Python projects and maintain security.
+
+
 Example Usage:
 
 To get the performance feedback for a representative with ID 123, you can use the following curl command:
