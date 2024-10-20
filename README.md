@@ -171,5 +171,4 @@ curl http://localhost:5000/api/rep_performance/123
 These technologies work together to create a web application that can analyze sales data using a Large Language Model (LLM) and provide insights through API endpoints.
 
 Use code with caution.
-
-This will send a GET request to the /api/rep_performance/<userid> endpoint and return the LLM's feedback in JSON format.
+Its better to make virtual environment and run the code within it.
