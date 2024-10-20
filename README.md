@@ -80,8 +80,6 @@ Once the application is running, you can access the endpoints using the followin
     Performance Trends: http://localhost:5000/api/performance_trends/<time_period> (replace <time_period> with "3" for monthly)
 
 
-I'd be glad to provide information on the `.env` file and its usage within the context of the given code:
-
 **Purpose of `.env` Files:**
 
 - `.env` files are used to store sensitive information, such as API keys, passwords, or database credentials.
