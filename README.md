@@ -38,7 +38,8 @@ Key Functionality:
     Load Sales Data:
         The load_sales_data function reads the sales performance data from a CSV file named sales_performance_data.csv.
         If the file is not found, it returns None.
-
+Note: The CSV data file (sales_performance_data.csv
+) must be located in the same directory as your Python code for the application to load it correctly. Make sure to include the data file in your project repository when sharing it on GitHub.
     Representative Performance Analysis:
         The /api/rep_performance/<userid> endpoint retrieves sales data for a specific representative.
         It calculates various metrics based on the data and sends it to the LLM for analysis.
