@@ -1,29 +1,29 @@
 # Backend-Development-Exercise-Sales-Team-Per-formance-Analysis-Using-LLM
  Develop a backend system that uses a Large Language Model (LLM) to analyze  sales data and provide feedback on both individual sales representatives and  overall team performance.
 
- Task Description
- Data Ingestion
- • Implement a flexible mechanism to ingest sales data (format: CSV or
- JSON).
- LLM Integration
- • Integrate a Large Language Model (like GPT) for data analysis.
- • The system should process data and generate insights for both individual
- representatives and the sales team as a whole.
- API Development
- Develop multiple RESTful API endpoints:
- • An endpoint to query performance feedback for a specific sales represen
-tative.
- • Anendpoint to assess overall team performance.
- • Anendpoint for sales performance trends and forecasting.
- Each endpoint should accept relevant parameters and return LLM-generated
- insights.
- Feedback Generation
- • Leverage the LLM to provide qualitative feedback and actionable insights
- based on the sales data.
- Technology Choice
- • You are free to use any backend technologies and frameworks you prefer.
- • The API endpoints should be tested using API testing tools like Postman
- or Insomnia.
+ ## Task Description
+
+### Data Ingestion
+* Implement a flexible mechanism to ingest sales data in CSV or JSON format.
+
+### LLM Integration
+* Integrate a Large Language Model (like GPT) for data analysis.
+* The system should process data and generate insights for both individual representatives and the sales team as a whole.
+
+### API Development
+* Develop multiple RESTful API endpoints:
+  * An endpoint to query performance feedback for a specific sales representative.
+  * An endpoint to assess overall team performance.
+  * An endpoint for sales performance trends and forecasting.
+* Each endpoint should accept relevant parameters and return LLM-generated insights.
+
+### Feedback Generation
+* Leverage the LLM to provide qualitative feedback and actionable insights based on the sales data.
+
+### Technology Choice
+* You are free to use any backend technologies and frameworks you prefer.
+* The API endpoints should be tested using API testing tools like Postman or Insomnia.
+
 
 Code Explanation:
 
