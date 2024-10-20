@@ -140,6 +140,36 @@ Bash
 
 curl http://localhost:5000/api/rep_performance/123
 
+
+*1. Technologies USED:*
+
+**1. Flask:**
+
+- **Framework:** A popular Python web framework for building web applications. It provides a lightweight and flexible approach to creating RESTful APIs and web services.
+
+**2. Pandas:**
+
+- **Library:** A powerful data manipulation and analysis library for Python. It is used to load the CSV data file, perform data cleaning, filtering, and calculations, and prepare the data for analysis.
+
+**3. Groq:**
+
+- **Library:** A library specifically designed for interacting with the Groq LLM. It provides the necessary functions for sending messages to the LLM and receiving responses.
+
+**4. Python:**
+
+- **Language:** The primary programming language used for the entire project.
+
+**5. dotenv:**
+
+- **Library:** (Optional, depending on your Groq API key management) Used to load environment variables from a `.env` file, allowing you to securely store sensitive information like API keys.
+
+**Additional Notes:**
+
+- The code uses the `datetime` module from the Python standard library for date/time operations.
+- The `jsonify` function from Flask is used to convert Python objects to JSON format for API responses.
+
+These technologies work together to create a web application that can analyze sales data using a Large Language Model (LLM) and provide insights through API endpoints.
+
 Use code with caution.
 
 This will send a GET request to the /api/rep_performance/<userid> endpoint and return the LLM's feedback in JSON format.
