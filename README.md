@@ -141,7 +141,7 @@ Bash
 curl http://localhost:5000/api/rep_performance/123
 
 
-##1. Technologies USED:*
+##1. Technologies USED:
 
 **1. Flask:**
 
